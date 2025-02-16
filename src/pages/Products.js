@@ -13,11 +13,12 @@ export default function ProductPage() {
         {PRODUCTS.map((product) => {
           return (
             <li key={product.id}>
-              <Link to={`${product.id}`}>{product.title}</Link>
+              <Link to={product.id}>{product.title}</Link>
             </li>
           );
         })}
       </ul>
+      <Link to = '..'> Back to Home</Link>
     </>
   );
 }
